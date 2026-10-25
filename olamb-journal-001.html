@@ -1,0 +1,91 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Jim Morissens builds and trains OLAMB, a small language model from scratch, to explore learning and test ORIGIN."><title>I Built My Own Language Model — Built on Maybe</title><style>:root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#20292e;background:#f9f9f6}*{box-sizing:border-box}body{margin:0}a{color:inherit;text-decoration:none}a:hover{color:#446e78}.wrap{max-width:1120px;margin:auto;padding:0 28px}header{border-bottom:1px solid #e1e5e4}.nav{height:80px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:20px;letter-spacing:-.055em;font-weight:800}.links{display:flex;gap:27px;font-size:13px;color:#5b6569}.banner{max-width:850px;margin:65px auto 25px;padding:0 24px}.eyebrow{font-size:11px;letter-spacing:.15em;font-weight:700;color:#607980;text-transform:uppercase}h1{font-size:clamp(43px,6vw,75px);letter-spacing:-.075em;line-height:1.07;margin:18px 0 19px} .byline{font-size:14px;color:#7a8588}.art{max-width:1100px;margin:40px auto 50px;padding:0 24px}.art svg{width:100%;height:auto;display:block;border-radius:3px}.prose{max-width:770px;padding:0 24px;margin:0 auto 90px;font-family:Georgia,serif;font-size:19px;line-height:1.85;color:#2f383b}.prose p{margin:0 0 24px}.prose h1{display:none}.prose h2{font-family:Inter,ui-sans-serif,system-ui,sans-serif;font-size:32px;line-height:1.2;letter-spacing:-.045em;margin:60px 0 25px;color:#222b30}.prose h2+p{margin-top:0}.prose hr{border:0;border-top:1px solid #dfe5e3;margin:45px 0}.prose blockquote{border-left:3px solid #83a2a6;padding-left:22px;margin:28px 0;color:#5e6b6d}.prose em{color:#394d50}.prose p:first-of-type{font-size:21px}footer{border-top:1px solid #dde2e1;padding:30px 0 50px;color:#7a8588;font-size:12px}@media(max-width:700px){.nav{height:65px}.links{gap:14px}.banner{margin-top:40px}.prose{font-size:18px}.prose h2{font-size:26px}}</style></head><body><header><div class="wrap nav"><a class="logo" href="index.html">BUILT ON MAYBE<span style="color:#83a2a6">.</span></a><nav class="links"><a href="index.html#journal">Journal</a><a href="index.html#projects">Projects</a><a href="index.html#about">About</a></nav></div></header><main><div class="banner"><div class="eyebrow">Building Intelligence — Research Journal #001</div><h1>I Built My Own Language Model. Here's What Happened.</h1><div class="byline">By Jim Morissens · October 25, 2026</div></div><div class="art"><svg viewBox="0 0 1100 350" role="img" aria-label="Abstract OLAMB language model illustration" xmlns="http://www.w3.org/2000/svg"><rect width="1100" height="350" fill="#e4edeb"/><g stroke="#729398" fill="none" stroke-width="2" opacity=".75"><path d="M110 269L271 78L430 230L607 92L766 241L961 70M271 78L607 92L430 230L766 241L961 70L607 92"/><circle cx="110" cy="269" r="38"/><circle cx="271" cy="78" r="51"/><circle cx="430" cy="230" r="68"/><circle cx="607" cy="92" r="32"/><circle cx="766" cy="241" r="58"/><circle cx="961" cy="70" r="40"/></g><g fill="#456e77"><circle cx="110" cy="269" r="6"/><circle cx="271" cy="78" r="8"/><circle cx="430" cy="230" r="10"/><circle cx="607" cy="92" r="7"/><circle cx="766" cy="241" r="9"/><circle cx="961" cy="70" r="7"/></g></svg></div><article class="prose"><p>I've been fascinated by artificial intelligence for quite some time. Not just what it can do, but how it actually works.</p>
+<p>We have AI models that can write software, solve complex problems and have conversations that sometimes feel surprisingly human.</p>
+<p>But I kept coming back to one question.</p>
+<p><em>What if I built one myself? From absolutely nothing?</em></p>
+<p>Not downloading an existing model. Not fine-tuning Llama. Actually building the architecture, training it and figuring out what works and what doesn't.</p>
+<p>So that's what I did.</p>
+<p>And naturally, I underestimated how much I'd learn along the way.</p>
+<h2>Meet OLAMB</h2>
+<p>I called my model <em>OLAMB — Open Learning Architecture &amp; Model Builder</em>.</p>
+<p>The name is a little joke. Meta has Llama, I have OLAMB. And since my first experiments involved sheep and lambs, it seemed like the obvious choice.</p>
+<p>But there's a more serious idea behind it.</p>
+<p>I don't want to build just one language model. I want to understand how different architectures learn, why some work better than others and whether I can eventually design better ones myself.</p>
+<p>I'm not trying to compete with OpenAI or Meta. That would be a rather ambitious project for a guy experimenting on his own computer.</p>
+<p>I'm interested in what's happening under the hood.</p>
+<h2>Teaching a Computer to Talk About Sheep</h2>
+<p>My first model had roughly one million parameters.</p>
+<p>For comparison, modern large language models can have billions. Mine was practically microscopic.</p>
+<p>I started with a small collection of English sentences about animals, places and simple actions.</p>
+<p>After training, OLAMB started producing things like:</p>
+<p>“the lamb near the river.”</p>
+<p>Not exactly Shakespeare, but I was genuinely pleased.</p>
+<p>Then it generated:</p>
+<p>“the fierd.”</p>
+<p>Less impressive.</p>
+<p>And at one point, I discovered the model couldn't even recognize the letter K.</p>
+<p>Why? Because that letter hadn't appeared in the original training vocabulary.</p>
+<p>I'd built a language model that couldn't handle the entire alphabet.</p>
+<p>Brilliant.</p>
+<p>But that's exactly why I wanted to do this myself. When you use an existing AI model, someone else has already solved thousands of these little problems.</p>
+<p>When you start from scratch, you get to discover every single one of them.</p>
+<p>Sometimes the hard way.</p>
+<h2>Bigger Isn't Always Better</h2>
+<p>I kept experimenting.</p>
+<p>One version grew to about 2.7 million parameters. It generated recognizable pieces of English, but the results were still inconsistent.</p>
+<p>So I decided to go in the opposite direction.</p>
+<p>Instead of adding more parameters, I built a smaller model with a better-controlled training dataset.</p>
+<p>The latest version, <em>OLAMB V3</em>, has just 817,181 parameters.</p>
+<p>It uses a four-layer Transformer architecture with four attention heads. Small enough to train on a regular CPU, but complex enough to experiment with the fundamentals of modern language models.</p>
+<p>This morning, October 25, I completed a fresh training run of 500 iterations.</p>
+<p>The validation loss dropped from 3.50 to <em>0.64</em>.</p>
+<p>That's a substantial improvement in the model's ability to predict the next token in the validation data.</p>
+<p>Does it mean OLAMB has suddenly become intelligent?</p>
+<p>Of course not.</p>
+<p>It might simply have become very good at recognizing the patterns in its training material.</p>
+<p>And that's what I want to find out next.</p>
+<p>I've deliberately kept part of the dataset separate, including combinations of words the model hasn't encountered during training.</p>
+<p>Now I want to see whether OLAMB can work with those unfamiliar combinations.</p>
+<p>Because there's a big difference between remembering something and learning how something works.</p>
+<h2>But OLAMB Isn't the Whole Story</h2>
+<p>Here's something I haven't mentioned yet.</p>
+<p><em>OLAMB isn't actually where this journey started.</em></p>
+<p>I've already built another experimental AI platform called <em>ORIGIN</em>.</p>
+<p>And while OLAMB is about building and training models, ORIGIN has a rather different purpose.</p>
+<p>In fact, one of the reasons I'm developing OLAMB is to <em>put ORIGIN itself to the test</em>.</p>
+<p>I wanted a model I could control from the ground up. Something I could change, deliberately challenge, break and rebuild. Something that produces real experimental evidence rather than impressive-looking demonstrations.</p>
+<p>OLAMB gives me exactly that.</p>
+<p>The interesting question isn't just whether OLAMB can learn.</p>
+<p>It's whether ORIGIN can help me discover why it learns, recognize what isn't working and guide the next experiment.</p>
+<p>And perhaps, eventually, suggest something I wouldn't have thought of myself.</p>
+<p>ORIGIN already exists, and I've been running experiments with it. Some of the results have been interesting enough to make me rethink where I want to take this.</p>
+<p>But I'll save that story for another post.</p>
+<p>Because ORIGIN raises a much bigger question than whether a small language model can learn to finish a sentence.</p>
+<p><em>What happens when you start experimenting with the research process itself?</em></p>
+<p>That's where things get particularly interesting.</p>
+<h2>So, What Have I Actually Achieved?</h2>
+<p>I've built and trained my own small language models from scratch.</p>
+<p>I've watched them go from random predictions to producing recognizable language patterns.</p>
+<p>I've broken things, fixed things and occasionally discovered that something as simple as a missing letter can ruin your afternoon.</p>
+<p>And I'm using those models to challenge an experimental research platform I've already built.</p>
+<p>I'm not claiming I've invented a new form of intelligence. I haven't.</p>
+<p>I'm also not a university researcher with a laboratory full of GPUs.</p>
+<p>I'm a technology guy who's spent years working with infrastructure and complex systems, and who became curious enough about AI to start building it himself.</p>
+<p>The more I learn, the more questions I seem to have.</p>
+<p>And strangely enough, that's what keeps me going.</p>
+<h2>What's Next?</h2>
+<p>First, I want to find out what OLAMB V3 has really learned.</p>
+<p>Then I'll experiment with different architectures, better training methods and see how far I can push the interaction between OLAMB and ORIGIN.</p>
+<p>I'm particularly interested in whether we can go beyond simply making existing models bigger and start exploring different ways for them to learn.</p>
+<p>Will any of this lead to something genuinely new?</p>
+<p>I have no idea.</p>
+<p>But I think it's worth finding out.</p>
+<p>And that's really the point of this journal.</p>
+<p>Not to pretend I have all the answers, but to share what happens when I start asking questions and actually try to build something.</p>
+<p><em>It started with a sheep.</em></p>
+<p><em>Now I'm curious where the lamb will take me.</em></p>
+<p>And in an upcoming post, I'll introduce ORIGIN properly — including why I built it, what it's already doing and the rather ambitious question I'm trying to answer with it.</p>
+<hr />
+<p>Building Intelligence — Research Journal #001</p>
+<p><em>Built on Maybe — Because every discovery begins with a possibility.</em></p>
+<p>All research and experiments are conducted independently, outside my professional responsibilities. The views and results are my own.</p>
+</article></main><footer><div class="wrap">© 2026 Built on Maybe. &nbsp; What if it works?</div></footer></body></html>
